@@ -39,7 +39,7 @@ s3 : mod_adder port map (avec(3),TMP(3),coutaux(2),coutaux(3),resaux(3));
 s4 : mod_adder port map ('0','1',coutaux(3),sinalflg,garbage);
 res <= resaux;
 signalflagsu <= not sinalflg;
-couts <= not coutaux(3);
+couts <= coutaux(3);
 overflows <= coutaux(3) xor coutaux(2);
 zeroflag <= (resaux(0) NOR resaux(1)) AND (resaux(2) NOR resaux(3));
 
