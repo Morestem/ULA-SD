@@ -1,15 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity increment is
     Port ( avec : in  STD_LOGIC_VECTOR (3 downto 0); -- recebe uma entrada de 4 bits para a realização da operação de incremento de 1
            res : out  STD_LOGIC_VECTOR (3 downto 0);
