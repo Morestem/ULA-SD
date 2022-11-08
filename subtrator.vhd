@@ -3,12 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity full_sub4b is
     Port ( avec : in  STD_LOGIC_VECTOR (3 downto 0);
-           bvec : in  STD_LOGIC_VECTOR (3 downto 0); -- recebe duas entradas de 4 bits e realiza a operação: primeira entrada - segunda entrada
+           bvec : in  STD_LOGIC_VECTOR (3 downto 0); -- recebe duas entradas de 4 bits
            zeroflag : out  STD_LOGIC;
            res : out  STD_LOGIC_VECTOR (3 downto 0);
            signalflagsu : out STD_LOGIC;
            couts : out STD_LOGIC;
-           overflows : out STD_LOGIC); -- gera as saídas do resultado e das flags da subtração 
+           overflows : out STD_LOGIC); -- gera, como saídas, a subtração da primeira entrada pela segunda e suas flags
 end full_sub4b;
 
 architecture Behavioral of full_sub4b is
