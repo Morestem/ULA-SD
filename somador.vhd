@@ -4,11 +4,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity full_adder4b is
     Port (
     vetorbits1 : in STD_LOGIC_VECTOR (3 downto 0); 
-    vetorbits2 : in STD_LOGIC_VECTOR (3 downto 0); -- recebe dois valores de entrada
+    vetorbits2 : in STD_LOGIC_VECTOR (3 downto 0); -- recebe duas entradas de 4 bits
     resultado : out STD_LOGIC_VECTOR (3 downto 0);
     zeroflag : out  STD_LOGIC;
     cout : out STD_LOGIC;
-    overflow : out  STD_LOGIC); -- gera saídas de resultado da operação e suas flags
+    overflow : out  STD_LOGIC); -- gera, como saídas, o resultado da soma entre as entradas e suas flags
  
 end full_adder4b;
 
