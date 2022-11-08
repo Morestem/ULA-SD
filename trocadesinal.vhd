@@ -5,7 +5,7 @@ entity signchange is
     Port ( an : in STD_LOGIC_VECTOR (3 downto 0); -- recebe uma entrada e realiza sua troca de sinal
            res : out STD_LOGIC_VECTOR (3 downto 0);
            signflag : out STD_LOGIC;
-           coutsign : out STD_LOGIC); -- gera, ocmo saídas, -valor de entrada e suas flags
+           coutsign : out STD_LOGIC); -- gera, como saídas, -valor de entrada e suas flags
 end signchange;
 
 architecture Behavioral of signchange is
