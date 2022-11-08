@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity metade is
-    Port ( r : in  STD_LOGIC_VECTOR (3 downto 0); -- recebe uma entrada de 4 bits e retorna o valor inicial dividido por 2 e aproximado à parte inteira da divisão com o deslocamento para a direita
+    Port ( r : in  STD_LOGIC_VECTOR (3 downto 0); -- recebe uma entrada de 4 bits
 	 resmetade : out STD_LOGIC_VECTOR (3 downto 0);
 	 zeroflagmet : out STD_LOGIC); -- gera, como saída, o resultado da divisão por 2 e a flag zero, em caso de resultado igual a "0000"
 end metade;
