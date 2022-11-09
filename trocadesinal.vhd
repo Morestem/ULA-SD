@@ -31,6 +31,6 @@ c1 : mod_adder port map (notA(1),'0',coutaux(0),coutaux(1),res(1));
 c2 : mod_adder port map (notA(2),'0',coutaux(1),coutaux(2),res(2));
 c3 : mod_adder port map (notA(3),'0',coutaux(2),coutaux(3),res(3));
 coutsign <= coutaux(3);
-signflag <= '1'; -- assumindo a entrada sempre como positiva, a flag de sinal será sempre '1'
+signflag <= not an(3); -- flag de sinal é contrária ao sinal de entrada
 
 end Behavioral;
